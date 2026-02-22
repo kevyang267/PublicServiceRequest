@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  public-service-request-app:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: public-service-request-app
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      - ConnectionStrings__DefaultConnection=${DB_CONNECTION}
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - public-service-request-network
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: public-service-request-postgres
+    environment:
+      POSTGRES_USER: ${Username}
+      POSTGRES_PASSWORD: ${Password}
+      POSTGRES_DB: ${Database}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - public-service-request-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${Username} -d ${Database}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  postgres_data:
+
+networks:
+  public-service-request-network:
+    driver: bridge
