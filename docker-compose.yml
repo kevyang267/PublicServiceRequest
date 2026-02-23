@@ -20,6 +20,21 @@ services:
       - public-service-request-network
     restart: unless-stopped
 
+  frontend:
+    build:
+      context: ./Frontend/public-service-request-frontend
+      dockerfile: Dockerfile
+    container_name: public-service-request-frontend
+    ports:
+      - "4200:4200"
+    environment:
+      - API_URL=http://localhost:5000
+    depends_on:
+      - public-service-request-app
+    networks:
+      - public-service-request-network
+    restart: unless-stopped
+
   postgres:
     image: postgres:16-alpine
     container_name: public-service-request-postgres

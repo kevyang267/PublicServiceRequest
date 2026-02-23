@@ -1,0 +1,68 @@
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.local
+.env.*.local
+
+# ========================
+# Angular / Node
+# ========================
+Frontend/public-service-request-frontend/node_modules/
+Frontend/public-service-request-frontend/dist/
+Frontend/public-service-request-frontend/.angular/
+Frontend/public-service-request-frontend/*.js.map
+npm-debug.log*
+yarn-error.log*
+
+# ========================
+# .NET / ASP.NET
+# ========================
+Backend/**/bin/
+Backend/**/obj/
+Backend/**/*.user
+Backend/**/*.suo
+Backend/**/.vs/
+Backend/**/TestResults/
+Backend/**/publish/
+*.log
+
+# Ignore local appsettings overrides but keep the base one
+Backend/**/appsettings.Development.json
+
+# ========================
+# Docker
+# ========================
+docker-compose.override.yml
+
+# ========================
+# IDEs & Editors
+# ========================
+.vscode/
+.vs/
+.idea/
+*.iml
+*.rsuser
+
+# ========================
+# OS
+# ========================
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ========================
+# Misc
+# ========================
+*.bak
+*.tmp
+*.swp

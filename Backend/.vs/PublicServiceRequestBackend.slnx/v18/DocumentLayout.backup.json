@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72228A21-A3EA-C77C-86E5-E54A2FAC3C41}|PublicServiceRequestBackend.Tests\\PublicServiceRequestBackend.Tests.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend.tests\\publicservicerequestservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72228A21-A3EA-C77C-86E5-E54A2FAC3C41}|PublicServiceRequestBackend.Tests\\PublicServiceRequestBackend.Tests.csproj|solutionrelative:publicservicerequestbackend.tests\\publicservicerequestservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\services\\publicservicerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\services\\publicservicerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PublicServiceRequestServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T02:13:48.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PublicServiceRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Services\\PublicServiceRequestService.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Services\\PublicServiceRequestService.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Services\\PublicServiceRequestService.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Services\\PublicServiceRequestService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T02:12:00.593Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
