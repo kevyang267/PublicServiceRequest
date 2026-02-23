@@ -1,4 +1,3 @@
-using Microsoft.OpenApi;
 using Microsoft.EntityFrameworkCore;
 using PublicServiceRequestBackend.Data;
 using PublicServiceRequestBackend.Middleware;
@@ -15,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:4000")
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();
@@ -23,33 +22,12 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddSwaggerGen(options =>
-{
-    options.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "PublicServiceRequestAPI",
-        Version = "v1"
-    });
-});
-
+builder.Services.AddOpenApi();
 builder.Services.AddDbContext<PublicServiceRequestDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 builder.Services.AddScoped<IPublicServiceRequest, PublicServiceRequestService>();
 
-
 var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "TaskManagerV1");
-    });
-}
 
 async Task MigrateDatabaseAsync()
 {
@@ -71,10 +49,10 @@ async Task MigrateDatabaseAsync()
 
 await MigrateDatabaseAsync();
 
+app.MapOpenApi();
 app.UseMiddleware<GlobalExceptionMiddleware>();
 app.UseRouting();
 app.UseCors("AllowFrontend");
-app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 

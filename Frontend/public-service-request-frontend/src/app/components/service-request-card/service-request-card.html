@@ -1,40 +1,40 @@
 <div
-  class="bg-white border border-gray-200 rounded-lg px-5 py-4 flex items-start justify-between gap-4 hover:border-gray-300 transition-colors"
+  class="bg-gray-800 border border-gray-700 rounded-lg px-5 py-4 flex items-start justify-between gap-4 hover:border-gray-600 transition-colors"
 >
   <div class="flex-1 min-w-0">
     <div class="flex items-center gap-3 mb-1">
-      <span class="text-xs font-mono text-gray-400">#{{ record.id }}</span>
-      <span class="text-xs font-medium px-2 py-0.5 rounded-full {{ statusClasses }}">
+      <span class="text-xs font-mono text-gray-500">#{{ record.id }}</span>
+      <span class="text-xs font-medium px-2 py-0.5 rounded-full" [ngClass]="statusClasses">
         {{ record.status }}
       </span>
-      <span class="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
+      <span class="text-xs text-gray-400 bg-gray-700 px-2 py-0.5 rounded-full">
         {{ record.requestType }}
       </span>
     </div>
 
-    <p class="text-sm font-medium text-gray-800 truncate">{{ record.requesterName }}</p>
+    <p class="text-sm font-medium text-gray-100 truncate">{{ record.requesterName }}</p>
 
-    <p class="text-sm text-gray-500 mt-1 line-clamp-2">{{ record.description }}</p>
+    <p class="text-sm text-gray-400 mt-1 line-clamp-2">{{ record.description }}</p>
 
-    <p class="text-xs text-gray-400 mt-2">
+    <p class="text-xs text-gray-500 mt-2">
       Created {{ record.createdDate | date: 'mediumDate' }}
-      <span *ngIf="record.updatedDate !== record.createdDate">
+      @if (record.updatedDate !== record.createdDate) {
         &middot; Updated {{ record.updatedDate | date: 'mediumDate' }}
-      </span>
+      }
     </p>
   </div>
 
   <div class="flex items-center gap-2 shrink-0">
     <a
       [routerLink]="['/requests', record.id]"
-      class="text-sm text-blue-600 hover:text-blue-800 font-medium"
+      class="text-sm text-lime-400 hover:text-lime-300 font-medium"
     >
       View
     </a>
     <button
       (click)="onDelete()"
       [disabled]="isDeleting"
-      class="text-sm text-red-400 hover:text-red-600 disabled:opacity-50 transition-colors"
+      class="text-sm text-red-400 hover:text-red-300 disabled:opacity-50 transition-colors"
     >
       {{ isDeleting ? 'Deleting...' : 'Delete' }}
     </button>

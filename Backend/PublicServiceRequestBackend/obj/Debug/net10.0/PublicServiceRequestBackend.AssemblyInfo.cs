@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PublicServiceRequestBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4836ce1ff35abc0feb82b69b45743ffdad0f8cc9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PublicServiceRequestBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PublicServiceRequestBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

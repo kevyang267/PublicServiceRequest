@@ -5,7 +5,7 @@ using PublicServiceRequestBackend.Models;
 namespace PublicServiceRequestBackend.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/records")]
     public class PublicServiceRequest : ControllerBase
     {
 
@@ -19,7 +19,7 @@ namespace PublicServiceRequestBackend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ServiceRecordDTO>>> GetAllServiceRecords()
         {
-            var records = _service.GetAllServiceRecordsAsync();
+            var records = await _service.GetAllServiceRecordsAsync();
             return Ok(records);
         }
 
@@ -58,16 +58,13 @@ namespace PublicServiceRequestBackend.Controllers
             }
         }
 
-
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServiceRecord(int id)
         {
             var record = await _service.DeleteRecordAsync(id);
-
             if (record == false)
             {
                 return NotFound();
-
             }
             return NoContent();
         }

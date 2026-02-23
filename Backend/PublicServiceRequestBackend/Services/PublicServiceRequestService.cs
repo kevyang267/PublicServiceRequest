@@ -17,7 +17,11 @@ namespace PublicServiceRequestBackend.Services
         public async Task<ServiceRecordDTO> CreateServiceRecordAsync(ServiceRecordDTO serviceRecordDto)
         {
             var entity = MapToEntity(serviceRecordDto);
+            entity.CreatedDate = DateTime.UtcNow;
+            entity.UpdatedDate = DateTime.UtcNow;
+            entity.Status = "Open";
             _context.ServiceRecords.Add(entity);
+            await _context.SaveChangesAsync(); // This was missing
             return MapToDTO(entity);
         }
 
@@ -52,11 +56,9 @@ namespace PublicServiceRequestBackend.Services
         public async Task<bool> DeleteRecordAsync(int id)
         {
             var entity = await _context.ServiceRecords.FindAsync(id);
-            if (entity != null)
-            {
-                _context.ServiceRecords.Remove(entity);
-                await _context.SaveChangesAsync();
-            }
+            if (entity == null) return false;
+            _context.ServiceRecords.Remove(entity);
+            await _context.SaveChangesAsync();
             return true;
         }
 

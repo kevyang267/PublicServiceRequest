@@ -21,13 +21,13 @@ export class ServiceRequestCardComponent {
   get statusClasses(): string {
     switch (this.record.status) {
       case 'Open':
-        return 'bg-green-100 text-green-700';
+        return 'bg-green-900 text-green-400';
       case 'In Progress':
-        return 'bg-yellow-100 text-yellow-700';
+        return 'bg-yellow-900 text-yellow-400';
       case 'Closed':
-        return 'bg-gray-100 text-gray-500';
+        return 'bg-gray-700 text-gray-400';
       default:
-        return 'bg-gray-100 text-gray-500';
+        return 'bg-gray-700 text-gray-400';
     }
   }
 

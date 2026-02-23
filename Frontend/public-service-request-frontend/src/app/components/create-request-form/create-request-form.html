@@ -1,33 +1,32 @@
 <!-- Backdrop -->
 <div
-  class="fixed inset-0 bg-black bg-opacity-40 z-40 flex items-center justify-center"
+  class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center"
   (click)="onCancel()"
 >
   <!-- Modal -->
   <div
-    class="bg-white rounded-xl shadow-xl w-full max-w-lg mx-4 z-50 p-6"
+    class="bg-gray-800 border border-gray-700 rounded-xl shadow-xl w-full max-w-lg mx-4 z-50 p-6"
     (click)="$event.stopPropagation()"
   >
     <div class="flex items-center justify-between mb-5">
-      <h2 class="text-lg font-semibold text-gray-800">New Service Request</h2>
-      <button (click)="onCancel()" class="text-gray-400 hover:text-gray-600 text-xl leading-none">
+      <h2 class="text-lg font-semibold text-white">New Service Request</h2>
+      <button (click)="onCancel()" class="text-gray-500 hover:text-gray-300 text-xl leading-none">
         &times;
       </button>
     </div>
 
-    <div
-      *ngIf="errorMessage"
-      class="bg-red-50 border border-red-200 text-red-700 rounded-md px-4 py-2 text-sm mb-4"
-    >
-      {{ errorMessage }}
-    </div>
+    @if (errorMessage) {
+      <div class="bg-red-900 border border-red-700 text-red-300 rounded-md px-4 py-2 text-sm mb-4">
+        {{ errorMessage }}
+      </div>
+    }
 
     <form (ngSubmit)="onSubmit()" #requestForm="ngForm" class="flex flex-col gap-4">
       <!-- Requester Name -->
       <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-gray-700"
-          >Requester Name <span class="text-red-500">*</span></label
-        >
+        <label class="text-sm font-medium text-gray-300">
+          Requester Name <span class="text-red-400">*</span>
+        </label>
         <input
           type="text"
           [(ngModel)]="form.requesterName"
@@ -35,39 +34,40 @@
           required
           maxlength="100"
           placeholder="Full name"
-          class="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-lime-500"
         />
       </div>
 
       <!-- Request Type -->
       <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-gray-700"
-          >Request Type <span class="text-red-500">*</span></label
-        >
+        <label class="text-sm font-medium text-gray-300">
+          Request Type <span class="text-red-400">*</span>
+        </label>
         <select
           [(ngModel)]="form.requestType"
           name="requestType"
           required
-          class="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-lime-500"
         >
           <option value="" disabled>Select a type</option>
-          <option *ngFor="let t of requestTypes" [value]="t">{{ t }}</option>
+          @for (t of requestTypes; track t) {
+            <option [value]="t">{{ t }}</option>
+          }
         </select>
       </div>
 
       <!-- Description -->
       <div class="flex flex-col gap-1">
-        <label class="text-sm font-medium text-gray-700">Description</label>
+        <label class="text-sm font-medium text-gray-300">Description</label>
         <textarea
           [(ngModel)]="form.description"
           name="description"
           maxlength="500"
           rows="4"
           placeholder="Describe the request..."
-          class="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-        </textarea>
-        <span class="text-xs text-gray-400 text-right">{{ form.description.length }}/500</span>
+          class="bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-sm text-gray-200 placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-lime-500"
+        ></textarea>
+        <span class="text-xs text-gray-500 text-right">{{ form.description.length }}/500</span>
       </div>
 
       <!-- Actions -->
@@ -75,14 +75,14 @@
         <button
           type="button"
           (click)="onCancel()"
-          class="text-sm px-4 py-2 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-50 transition-colors"
+          class="text-sm px-4 py-2 rounded-md border border-gray-600 text-gray-400 hover:bg-gray-700 transition-colors"
         >
           Cancel
         </button>
         <button
           type="submit"
           [disabled]="isSubmitting || !form.requesterName || !form.requestType"
-          class="text-sm px-4 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          class="text-sm px-4 py-2 rounded-md bg-lime-500 text-white font-medium hover:bg-lime-400 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           {{ isSubmitting ? 'Submitting...' : 'Submit Request' }}
         </button>
