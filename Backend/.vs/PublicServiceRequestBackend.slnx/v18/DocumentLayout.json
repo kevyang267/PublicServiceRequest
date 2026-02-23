@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\controllers\\publicservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\controllers\\publicservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\data\\publicservicerequestdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\data\\publicservicerequestdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\models\\servicerecordentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\models\\servicerecordentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\models\\servicerecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\models\\servicerecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\services\\ipublicservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\services\\ipublicservicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\services\\publicservicerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\services\\publicservicerequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E765BF8E-58A6-3A70-9568-F5A990541FBA}|PublicServiceRequestBackend\\PublicServiceRequestBackend.csproj|solutionrelative:publicservicerequestbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{72228A21-A3EA-C77C-86E5-E54A2FAC3C41}|PublicServiceRequestBackend.Tests\\PublicServiceRequestBackend.Tests.csproj|c:\\users\\oofa\\documents\\net projects\\git\\publicservicerequest\\backend\\publicservicerequestbackend.tests\\publicservicerequestservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,19 +59,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T03:02:15.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PublicServiceRequestDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Data\\PublicServiceRequestDbContext.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Data\\PublicServiceRequestDbContext.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Data\\PublicServiceRequestDbContext.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Data\\PublicServiceRequestDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:02:00.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:01:56.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceRecordEntity.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Models\\ServiceRecordEntity.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Models\\ServiceRecordEntity.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Models\\ServiceRecordEntity.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Models\\ServiceRecordEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:01:51.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceRecordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Models\\ServiceRecordDTO.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Models\\ServiceRecordDTO.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Models\\ServiceRecordDTO.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Models\\ServiceRecordDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:01:50.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPublicServiceRequest.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Services\\IPublicServiceRequest.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Services\\IPublicServiceRequest.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Services\\IPublicServiceRequest.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Services\\IPublicServiceRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:01:49.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\appsettings.json",
+              "RelativeToolTip": "PublicServiceRequestBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T03:01:42.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PublicServiceRequest.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Controllers\\PublicServiceRequest.cs",
               "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Controllers\\PublicServiceRequest.cs",
               "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Controllers\\PublicServiceRequest.cs",
               "RelativeToolTip": "PublicServiceRequestBackend\\Controllers\\PublicServiceRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-23T02:30:16.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Program.cs",
+              "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Program.cs",
+              "RelativeToolTip": "PublicServiceRequestBackend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:01:26.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PublicServiceRequestServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
               "RelativeDocumentMoniker": "PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
@@ -47,12 +183,11 @@
               "RelativeToolTip": "PublicServiceRequestBackend.Tests\\PublicServiceRequestServiceTests.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAA1wBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T02:13:48.609Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T02:13:48.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "PublicServiceRequestService.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\PublicServiceRequest\\Backend\\PublicServiceRequestBackend\\Services\\PublicServiceRequestService.cs",
               "RelativeDocumentMoniker": "PublicServiceRequestBackend\\Services\\PublicServiceRequestService.cs",

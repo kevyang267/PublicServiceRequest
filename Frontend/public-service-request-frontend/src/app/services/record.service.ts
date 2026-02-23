@@ -64,7 +64,6 @@ export class RecordService {
         errorMessage = 'Unauthorized: Please log in';
       }
     }
-
     console.error(errorMessage);
     return throwError(() => new Error(errorMessage));
   }
