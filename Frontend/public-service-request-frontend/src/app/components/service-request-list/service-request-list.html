@@ -1,0 +1,95 @@
+<div class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl font-semibold text-gray-800">Service Requests</h1>
+        <p class="text-sm text-gray-500 mt-0.5">Manage and track public service requests</p>
+      </div>
+      <button
+        (click)="showCreateForm = true"
+        class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-md transition-colors"
+      >
+        + New Request
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-6">
+    <!-- Filters -->
+    <div class="bg-white border border-gray-200 rounded-lg p-4 mb-6 flex flex-wrap gap-4 items-end">
+      <div class="flex flex-col gap-1">
+        <label class="text-xs font-medium text-gray-600">Filter by Status</label>
+        <select
+          [(ngModel)]="filterStatus"
+          (ngModelChange)="onFilterChange()"
+          class="border border-gray-300 rounded-md text-sm px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="">All Statuses</option>
+          <option *ngFor="let s of statuses" [value]="s">{{ s }}</option>
+        </select>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <label class="text-xs font-medium text-gray-600">Filter by Type</label>
+        <select
+          [(ngModel)]="filterType"
+          (ngModelChange)="onFilterChange()"
+          class="border border-gray-300 rounded-md text-sm px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="">All Types</option>
+          <option *ngFor="let t of requestTypes" [value]="t">{{ t }}</option>
+        </select>
+      </div>
+
+      <button
+        *ngIf="filterStatus || filterType"
+        (click)="clearFilters()"
+        class="text-sm text-gray-500 hover:text-gray-700 underline pb-2"
+      >
+        Clear filters
+      </button>
+
+      <span class="text-sm text-gray-400 ml-auto pb-2">
+        {{ filteredRecords.length }} of {{ records.length }} requests
+      </span>
+    </div>
+
+    <!-- Loading -->
+    <div *ngIf="isLoading" class="text-center py-16 text-gray-400 text-sm">Loading requests...</div>
+
+    <!-- Error -->
+    <div
+      *ngIf="errorMessage && !isLoading"
+      class="bg-red-50 border border-red-200 text-red-700 rounded-lg px-4 py-3 text-sm mb-4"
+    >
+      {{ errorMessage }}
+    </div>
+
+    <!-- Empty State -->
+    <div
+      *ngIf="!isLoading && !errorMessage && filteredRecords.length === 0"
+      class="text-center py-16 text-gray-400 text-sm"
+    >
+      No service requests found.
+    </div>
+
+    <!-- Record List -->
+    <div class="flex flex-col gap-3">
+      <app-service-request-card
+        *ngFor="let record of filteredRecords"
+        [record]="record"
+        (deleted)="onRecordDeleted($event)"
+      >
+      </app-service-request-card>
+    </div>
+  </main>
+
+  <!-- Create Form Modal -->
+  <app-create-request-form
+    *ngIf="showCreateForm"
+    (created)="onRecordCreated($event)"
+    (cancelled)="showCreateForm = false"
+  >
+  </app-create-request-form>
+</div>

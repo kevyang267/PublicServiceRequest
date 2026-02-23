@@ -1,0 +1,124 @@
+<div class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 px-6 py-4">
+    <div class="max-w-3xl mx-auto flex items-center gap-3">
+      <a routerLink="/" class="text-sm text-blue-600 hover:text-blue-800"
+        >&larr; Back to Requests</a
+      >
+      <span class="text-gray-300">|</span>
+      <h1 class="text-lg font-semibold text-gray-800">Request Detail</h1>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-8">
+    <!-- Loading -->
+    <div *ngIf="isLoading" class="text-center py-16 text-gray-400 text-sm">Loading request...</div>
+
+    <!-- Error -->
+    <div
+      *ngIf="errorMessage && !isLoading"
+      class="bg-red-50 border border-red-200 text-red-700 rounded-lg px-4 py-3 text-sm"
+    >
+      {{ errorMessage }}
+    </div>
+
+    <!-- Detail Card -->
+    <div
+      *ngIf="record && !isLoading"
+      class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-6"
+    >
+      <!-- Meta -->
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono text-gray-400">Request #{{ record.id }}</span>
+          <h2 class="text-xl font-semibold text-gray-800 mt-1">{{ record.requesterName }}</h2>
+        </div>
+        <span
+          class="text-xs font-medium px-3 py-1 rounded-full mt-1
+          {{
+            record.status === 'Open'
+              ? 'bg-green-100 text-green-700'
+              : record.status === 'In Progress'
+                ? 'bg-yellow-100 text-yellow-700'
+                : 'bg-gray-100 text-gray-500'
+          }}"
+        >
+          {{ record.status }}
+        </span>
+      </div>
+
+      <hr class="border-gray-100" />
+
+      <!-- Fields -->
+      <div class="grid grid-cols-2 gap-4 text-sm">
+        <div>
+          <p class="text-xs font-medium text-gray-500 mb-1">Request Type</p>
+          <p class="text-gray-800">{{ record.requestType }}</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium text-gray-500 mb-1">Current Status</p>
+          <p class="text-gray-800">{{ record.status }}</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium text-gray-500 mb-1">Created</p>
+          <p class="text-gray-800">{{ record.createdDate | date: 'medium' }}</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium text-gray-500 mb-1">Last Updated</p>
+          <p class="text-gray-800">{{ record.updatedDate | date: 'medium' }}</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-xs font-medium text-gray-500 mb-1">Description</p>
+        <p class="text-gray-800 text-sm whitespace-pre-wrap">
+          {{ record.description || 'No description provided.' }}
+        </p>
+      </div>
+
+      <hr class="border-gray-100" />
+
+      <!-- Status Update -->
+      <div>
+        <p class="text-sm font-medium text-gray-700 mb-2">Update Status</p>
+
+        <div
+          *ngIf="successMessage"
+          class="bg-green-50 border border-green-200 text-green-700 rounded-md px-4 py-2 text-sm mb-3"
+        >
+          {{ successMessage }}
+        </div>
+
+        <div class="flex items-center gap-3">
+          <select
+            [(ngModel)]="selectedStatus"
+            class="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option *ngFor="let s of statuses" [value]="s">{{ s }}</option>
+          </select>
+
+          <button
+            (click)="onUpdateStatus()"
+            [disabled]="!statusChanged || isSaving"
+            class="text-sm px-4 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          >
+            {{ isSaving ? 'Saving...' : 'Save Status' }}
+          </button>
+        </div>
+      </div>
+
+      <hr class="border-gray-100" />
+
+      <!-- Danger Zone -->
+      <div class="flex justify-end">
+        <button
+          (click)="onDelete()"
+          [disabled]="isDeleting"
+          class="text-sm text-red-500 hover:text-red-700 disabled:opacity-50 transition-colors"
+        >
+          {{ isDeleting ? 'Deleting...' : 'Delete Request' }}
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
