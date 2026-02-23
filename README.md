@@ -46,21 +46,22 @@ PublicServiceRequest/
 │   │   └── PublicServiceRequestBackend.csproj           # Project file
 │   ├── PublicServiceRequestBackend.Tests/               # Unit tests
 │   └── Dockerfile                                       # Backend Docker build
-├── public-service-request-frontend/                     # Angular Frontend
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── components/                              # Login & task manager components
-│   │   │   ├── models/                                  # Task & DTO models
-│   │   │   ├── services/                                # Task service
-│   │   │   ├── app.config.ts                            # App providers
-│   │   │   ├── app.routes.ts                            # Route definitions
-│   │   │   ├── app.ts                                   # Root component
-│   │   │   └── app.html                                 # Root template
-│   │   ├── environments/
-│   │   │   ├── environment.ts                           # Local dev config
-│   │   │   └── environment.production.ts                # Production config
-│   │   └── main.ts                                      # Browser entry point
-│   └── Dockerfile                                       # Frontend Docker build
+├── Frontend/                                            # Angular Frontend
+│   ├── public-service-request-frontend/
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   │   ├── components/                          # Login & task manager components
+│   │   │   │   ├── models/                              # Task & DTO models
+│   │   │   │   ├── services/                            # Task service
+│   │   │   │   ├── app.config.ts                        # App providers
+│   │   │   │   ├── app.routes.ts                        # Route definitions
+│   │   │   │   ├── app.ts                               # Root component
+│   │   │   │   └── app.html                             # Root template
+│   │   │   ├── environments/
+│   │   │   │   ├── environment.ts                       # Local dev config
+│   │   │   │   └── environment.production.ts            # Production config
+│   │   │   └── main.ts                                  # Browser entry point
+│   │   └── Dockerfile                                   # Frontend Docker build
 ├── .dockerignore
 ├── .env                                                 # Environment variables (do not commit)
 ├── docker-compose.yml                                   # Multi-container setup
